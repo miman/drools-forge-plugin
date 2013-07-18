@@ -1,0 +1,20 @@
+package ${packageReplace}
+
+import org.slf4j.LoggerFactory
+import ${packageReplace}.rules.Likes
+
+rule "Very liked rule"
+	dialect "mvel"
+when
+     $product : Likes( noOfLikes > 10 )
+then
+     LoggerFactory.getLogger(Likes.class).debug(String.format("Very liked rule applied, # of likes = [%s]", $product.noOfLikes))
+end
+
+rule "Not so liked rule"
+	dialect "mvel"
+when
+     $product : Likes( noOfLikes < 11 )
+then
+     LoggerFactory.getLogger(Likes.class).debug(String.format("Not very liked rule applied, # of likes = [%s]", $product.noOfLikes))
+end

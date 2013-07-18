@@ -128,8 +128,9 @@ public class DroolsPluginFacet extends MimanBaseFacet
    }
 
    /**
-    * Creates the forge.xml.
-    * We need this to be able to have a dependency to the miman-forge-plugin-util-impl project.
+    * Merges the applicationContext.xml template with the existing one.
+    * 
+    * If no xml file exists, we create one
     */
 	private void mergeApplicationContextFile(String prjAbsolutePath) {
 		String sourceUri = "/template-files/resources/applicationContext-rules-fragment.xml";
