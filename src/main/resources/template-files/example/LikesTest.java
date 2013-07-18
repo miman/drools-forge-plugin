@@ -46,29 +46,4 @@ public class LikesTest {
         System.out.println(format("Very liked [likes: %s, checks %s]", veryLiked.getNoOfLikes(), veryLiked.getNoOfChecks()));
         System.out.println(format("Not so liked [likes: %s, checks %s]", notSoLiked.getNoOfLikes(), notSoLiked.getNoOfChecks()));
     }
-    
-    @Test
-    public void testInjectedLike() throws Exception {
-    	Likes veryLiked = new Likes();
-    	veryLiked.setNoOfLikes(24);
-    	Likes notSoLiked = new Likes();
-    	notSoLiked.setNoOfLikes(9);
-    	
-    	List<Likes> likesList = new ArrayList<Likes>();
-    	likesList.add(veryLiked);
-    	likesList.add(notSoLiked);
-
-    	AgendaEventListener ael = null;
-    	WorkingMemoryEventListener wmel = null;
-    	ProcessEventListener pel = null;
-    	productsKSession.addEventListener(ael);
-        productsKSession.execute(likesList);
-
-        assertEquals(0, veryLiked.getNoOfChecks());
-        assertEquals(0, notSoLiked.getNoOfChecks());
-
-        System.out.println(format("Very liked [likes: %s, checks %s]", veryLiked.getNoOfLikes(), veryLiked.getNoOfChecks()));
-        System.out.println(format("Not so liked [likes: %s, checks %s]", notSoLiked.getNoOfLikes(), notSoLiked.getNoOfChecks()));
-    }
-    
 }
