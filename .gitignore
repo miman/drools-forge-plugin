@@ -3,3 +3,5 @@
 /.project
 /.classpath
 /.forge_settings
+/pom.xml.releaseBackup
+/release.properties
