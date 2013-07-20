@@ -1,4 +1,4 @@
-package se;
+package eu.miman.forge.plugin.drools;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -29,11 +29,11 @@ import org.jboss.forge.shell.plugins.Plugin;
 import org.jboss.forge.shell.plugins.RequiresProject;
 import org.jboss.forge.shell.plugins.SetupCommand;
 
-import se.facet.DroolsPluginExampleFacet;
-import se.facet.DroolsPluginFacet;
-import se.miman.forge.plugin.util.VelocityUtil;
-import se.miman.forge.plugin.util.helpers.DomFileHelper;
-import se.miman.forge.plugin.util.helpers.DomFileHelperImpl;
+import eu.miman.forge.plugin.drools.facet.DroolsPluginExampleFacet;
+import eu.miman.forge.plugin.drools.facet.DroolsPluginFacet;
+import eu.miman.forge.plugin.util.VelocityUtil;
+import eu.miman.forge.plugin.util.helpers.DomFileHelper;
+import eu.miman.forge.plugin.util.helpers.DomFileHelperImpl;
 
 @Alias("drools")
 @Help("A plugin that adds the necessary dependencies and files to a project to run JBoss Drools rules")

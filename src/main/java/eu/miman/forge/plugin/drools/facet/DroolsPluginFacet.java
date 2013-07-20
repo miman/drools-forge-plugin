@@ -1,7 +1,7 @@
 /**
  * 
  */
-package se.facet;
+package eu.miman.forge.plugin.drools.facet;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -24,10 +24,10 @@ import org.jboss.forge.project.facets.JavaSourceFacet;
 import org.jboss.forge.shell.plugins.Alias;
 import org.jboss.forge.shell.plugins.RequiresFacet;
 
-import se.miman.forge.plugin.util.MimanBaseFacet;
-import se.miman.forge.plugin.util.VelocityUtil;
-import se.miman.forge.plugin.util.helpers.DomFileHelper;
-import se.miman.forge.plugin.util.helpers.DomFileHelperImpl;
+import eu.miman.forge.plugin.util.MimanBaseFacet;
+import eu.miman.forge.plugin.util.VelocityUtil;
+import eu.miman.forge.plugin.util.helpers.DomFileHelper;
+import eu.miman.forge.plugin.util.helpers.DomFileHelperImpl;
 
 /**
  * Adds the necessary dependencies and files to a project to run JBoss Drools rules.

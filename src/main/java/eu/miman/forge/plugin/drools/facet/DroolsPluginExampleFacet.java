@@ -1,7 +1,7 @@
 /**
  * 
  */
-package se.facet;
+package eu.miman.forge.plugin.drools.facet;
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ import org.jboss.forge.project.facets.JavaSourceFacet;
 import org.jboss.forge.shell.plugins.Alias;
 import org.jboss.forge.shell.plugins.RequiresFacet;
 
-import se.miman.forge.plugin.util.MimanBaseFacet;
+import eu.miman.forge.plugin.util.MimanBaseFacet;
 
 /**
  * Adds the necessary dependencies and files to a project to run JBoss Drools rules.
