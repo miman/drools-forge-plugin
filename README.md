@@ -17,9 +17,3 @@ It also adds the rules folder where the rules should be placed (**${prj-root}\sr
 
 This command creates an example rule to the project.
 It also adds an example DTO & a test JUnit class for this rule.
-
-OBS ! - Needed Maven project dependency
----------------------------------------
-This project has a dependency to the **miman-forge-plugin-util** project.
-So to build this project you must download (and build) version 1.0.1 of this project first
-[Found here](https://github.com/mikaelth/miman-forge-plugin-util)
