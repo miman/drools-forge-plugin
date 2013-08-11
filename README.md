@@ -16,4 +16,5 @@ It also adds the rules folder where the rules should be placed (**${prj-root}\sr
 ### Command: add-example-rule
 
 This command creates an example rule to the project.
+
 It also adds an example DTO & a test JUnit class for this rule.
